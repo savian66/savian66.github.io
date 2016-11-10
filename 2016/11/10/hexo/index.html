@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Tag: 建站 | savian&#39;s website</title>
+  <title>HEXO 博客搭建 | savian&#39;s website</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -84,7 +84,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -191,69 +191,89 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(http://savian66.github.io//public/16-11-10/21136216.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2></h2>
-                        <p></p>
-                        
-                        <h2></h2>
-                        <p></p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-
-
-
-
-<section id="services">
+      
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/11/10/hexo/">HEXO 博客搭建</a></h4>
-                            
-                            <p><time datetime="2016-11-10T07:44:43.000Z"><a href="/2016/11/10/hexo/">2016-11-10</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2016-11-10T07:44:43.000Z" itemprop="datePublished">
+          2016-11-10
+      </time>
+    
+    
+    | 
+    <a href='/tags/建站/'>建站</a>
+    
+    
+</span>
+                <h1>HEXO 博客搭建</h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<p>个人网站终于建起来了~撒花！趟过了好多坑，写下来，以后也好给自己和别人参考。相关博客参考<br>hexo <a href="http://www.jianshu.com/p/465830080ea9" target="_blank" rel="external">http://www.jianshu.com/p/465830080ea9</a><br>git下载<a href="https://git-for-windows.github.io/" target="_blank" rel="external">https://git-for-windows.github.io/</a><br>廖雪峰<a href="http://www.liaoxuefeng.com/" target="_blank" rel="external">http://www.liaoxuefeng.com/</a><br>搭建<a href="http://blog.csdn.net/jzooo/article/details/46781805" target="_blank" rel="external">http://blog.csdn.net/jzooo/article/details/46781805</a><br>l另一篇更详细的教程<a href="http://www.jianshu.com/p/1c98aed8d92e#" target="_blank" rel="external">http://www.jianshu.com/p/1c98aed8d92e#</a><br>主题<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">http://theme-next.iissnan.com/getting-started.html</a><br>域名<a href="http://www.isetsuna.com/hexo/domain-dns/" target="_blank" rel="external">http://www.isetsuna.com/hexo/domain-dns/</a><br><strong>Your Order Number is: 2691747824</strong><br>域名解析<a href="https://www.freehao123.com/freenom-gq/" target="_blank" rel="external">https://www.freehao123.com/freenom-gq/</a><br>图床<a href="http://yotuku.cn/" target="_blank" rel="external">http://yotuku.cn/</a></p>
+<p>1.在 Git Bash 中我们执行下面这一句（这是一整句的）：</p>
+<p>alias cnpm=”npm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="external">https://registry.npm.taobao.org</a> --cache=$HOME/.npm/.cache/cnpm --disturl=<a href="https://npm.taobao.org/dist" target="_blank" rel="external">https://npm.taobao.org/dist</a> --userconfig=$HOME/.cnpmrc”</p>
+<p>现在验证下是否可以使用淘宝的 cnpm 命令：cnpm info express<br>2.<br>继续在 Git Bash 中输入：<br>cnpm install hexo -server –save<br>cnpm install hexo-deployer-git –save</p>
+<p>3.</p>
+<blockquote>
+<ul>
+<li>先清除掉已经生成的旧文件：hexo clean</li>
+<li>再生成一次静态文件：hexo generate</li>
+<li>在本地预览下：hexo server</li>
+<li>现在用浏览器访问：<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></li>
+<li>本地没问题之后，Ctrl + C 停掉本地预览，使用部署命令部署到 Github 上：hexo deploy，有弹出下面提示框，请输入：yes</li>
+<li>访问 <a href="https://savian66.github.io/">https://savian66.github.io/</a></li>
+<li>新建文章hexo new page “pageName”//新建文章，位于目录/blog/source/_posts下 编辑文章</li>
+<li>新建页面hexo generate </li>
+<li>生成静态页面至public目录hexo server </li>
+<li>开启预览访问端口（默认端口4000，’ctrl + c’关闭server）</li>
+<li>将.deploy目录部署到GitHub hexo deploy </li>
+</ul>
+</blockquote>
+<ul>
+<li>error: failed to execute prompt script (exit code 1) fatal: could not read Username for ‘<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a>‘: Invalid argument<br><a href="https://segmentfault.com/q/1010000003734223" target="_blank" rel="external">https://segmentfault.com/q/1010000003734223</a><br>我也遇到过这样的问题，不过我把_config.yml中的repository 改了成了ssh，我的_config.yml文件是这样的。<br>deploy: type: git repository: ssh://git@github.com/xiaoliuzi/xiaoliuzi.github.io branch: master</li>
+<li><p>安装hexo后，bash: hexo: command not found<br>找到C:\Users\Administrator\AppData\Roaming\npm\node_modules\hexo\bin\，将此目录添加到环境变量中</p>
+</li>
+<li><p>在配置所有的_config.yml文件时（包括theme中的），在所有的冒号:后边都要加一个空格，否则执行hexo命令会报错。 博主本人的报错为FATAL bad indentation of a mapping entry at line 72, column 15:<br>请确认您使用空格进行<strong>缩进</strong>（Soft tab），并确认<strong>冒号后有一个空格</strong>。</p>
+</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/442518-18c3af6f7f35ea2c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="2016.10.14 11:52"></p>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p></p>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2016/11/10/产品UGC/" style="float: left;">
+        ← 【产品】UGC社区在初期如何引导用户产生内容
+    </a>
+    
+    
+    <a class="pull-right" href="/2016/11/10/hello-world/">
+        Hello World →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2016/11/10/hexo/" data-title="HEXO 博客搭建" data-url="http://savian66.github.io/2016/11/10/hexo/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"duoshuo_name"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
     </div>
 </section>
+
+
       
 <!-- ============================ Footer =========================== -->
 
