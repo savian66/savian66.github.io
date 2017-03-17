@@ -1,0 +1,599 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="在一个论坛上看到一个话题“说说做产品工作过程中遇到的几个坑”大家的讨论我都感同身受，那我也说说自己踩过的几个坑吧，算是总结，也是警醒。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在做产品过程中遇到的几个坑">
+<meta property="og:url" content="http://savian66.github.io/2017/03/17/【产品】在做产品过程中遇到的几个坑/index.html">
+<meta property="og:site_name" content="savian's website">
+<meta property="og:description" content="在一个论坛上看到一个话题“说说做产品工作过程中遇到的几个坑”大家的讨论我都感同身受，那我也说说自己踩过的几个坑吧，算是总结，也是警醒。">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/442518-9b0b49263d2fddcf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/442518-139d4fa620e17685.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-03-17T07:57:22.295Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="在做产品过程中遇到的几个坑">
+<meta name="twitter:description" content="在一个论坛上看到一个话题“说说做产品工作过程中遇到的几个坑”大家的讨论我都感同身受，那我也说说自己踩过的几个坑吧，算是总结，也是警醒。">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/442518-9b0b49263d2fddcf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://savian66.github.io/2017/03/17/【产品】在做产品过程中遇到的几个坑/"/>
+
+
+  <title> 在做产品过程中遇到的几个坑 | savian's website </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-CN">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta custom-logo">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">savian's website</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/±êÇ©" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                在做产品过程中遇到的几个坑
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2017-03-17T15:50:06+08:00" content="2017-03-17">
+              2017-03-17
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+              &nbsp; | &nbsp;
+              <span class="page-pv"><i class="fa fa-file-o"></i>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+              </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://upload-images.jianshu.io/upload_images/442518-9b0b49263d2fddcf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<blockquote>
+<p>在一个论坛上看到一个话题“说说做产品工作过程中遇到的几个坑”大家的讨论我都感同身受，那我也说说自己踩过的几个坑吧，算是总结，也是警醒。</p>
+</blockquote>
+<a id="more"></a>
+<p>一、</p>
+<p>实习时候做的是后台产品，而且是toB产品的后台，复杂程度可想而知。</p>
+<p>刚开始交给我这个任务，我连这个行业通用的名词都不知道，但是因为刚进入实习急于表现，leader交给我的任务刚说完我就满口应承下来，然后告诉自己一定要要做好让他看出我的实力。</p>
+<p>结果在实施的过程中，困难程度远超我的预期，虽然我做的都是实现层面的事，是一颗螺丝钉，但是实现的前提是对整个产品有一个大局观，全局认识，再深入到每个细节中去。这样子做出来的东西才是符合预期的。</p>
+<p>可是我太急于求成，很想把这个东西做出来给leader看，遇到不懂的地方也不想去问正式员工或者是对这一块业务很熟的人，怕人家看扁我。这样的结果就是做出来的东西方向跑偏，有的甚至被全盘否决。而一旦陷入了这个循环，领导交给我的任务有时要讲好几遍，我还是深陷自己的思路不能自拔，导致领导会有一种这个实习生领悟能力不行的感觉……</p>
+<p><strong>总结：太急于赶路而忘记了抬头看路，可能和你的期望背道而驰。做事大局观很重要，先对行业或者产品有个全面认识，才能在小细节上越做越好。</strong></p>
+<p>二、</p>
+<p>需求才是产品核心关注的点，用户体验和用户界面只是锦上添花，不是雪中送炭。</p>
+<p>刚开始做竞品分析的时候特别喜欢分析视觉层面，可能这也是新手普遍会走的坑，但是渐渐地发现一个产品好与不好，根本是由产品解决的需求痛点所决定的。产品有产品驱动、技术驱动、运营驱动，但很少有设计驱动。设计的质感并不决定产品的成败。在目前界面和用户体验同质化严重的情况下，能脱颖而出的是解决了用户需求的产品。</p>
+<p>UI中国和站酷网都是我经常去的设计网站，而且认为UI中国的设计要比站酷要好一些，站酷整体设计有些古老了，线条太多影响观感。但是我最近打开UI中国越来越少了，为什么呢？因为同样都是以图片流为主的网站，在网速稍差的情况下站酷打开速度要比UI中国流畅的多，后者经常一分钟都加载不完，而且站酷聚集了更多“大V”，这是我变成忠实用户的另一点原因。</p>
+<p>再比如论坛的核心功能是提供一个彼此交流的空间，消息传递、阅读文字、分享资源。天涯论坛和南大小百合至今UI似乎还延续着多年前的风格，但并不妨碍其核心功能发挥作用，在这个信息越来越碎片化的时代，用户不断分流，高质量论坛的忠实用户还是众多。<br><img src="http://upload-images.jianshu.io/upload_images/442518-139d4fa620e17685.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="南大小百合"></p>
+<p><strong>总结：做一个完整的产品过程中，不要过早沉溺产品细节，产品经理的核心价值是不可替代的思考力，产品经理是来寻求问题，分析问题，解决问题的，这过程需求自发的去不断的分析，不断的思考，不断的反思总结。产品经理要跳出思维局限，需求分析，数据分析，用户体验，产品设计，交互等等这些固然重要，这些是产品的基本技能，但是产品如果想往更高级发展，必须从思考力，思维层面去发展，不能局限在实现层面。要提高自己在思想和思考上的不可替代性。</strong></p>
+<p>三、</p>
+<p> 产品经理很重要的一部分就是项目管理的能力，而项目进度是催出来的…或者说的理想一点，是靠自身的执行力感染出来的…</p>
+<p>这句话真的是血淋淋的教训，因为我负责的不是与市场配合的时效性特别强的项目，所以对于项目管理开始的时候并没有特别上心。程序员GG手上负责的项目比较多，也属于不拖不动的类型，原型和产品文档发给他了之后就没有回音了…项目一段时间没有太大进展。</p>
+<p>然后，然后我就被leader约谈了…中心思想就是我不够主动，不去催进度，产品进度本来就应该提前于开发进度一个周期。</p>
+<p><strong>总结：你不好意思催别人就会被耽误进度。主动沟通，设置期限，加大延期代价（如要写延期说明），形成自己的项目管理方法论，并严格执行，项目的关键点就是不能顺其自然的发展。</strong></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/17/在线教育市场与问题思考/" rel="next" title="在线教育市场与问题思考">
+                <i class="fa fa-chevron-left"></i> 在线教育市场与问题思考
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/17/APP在哪里设置注册登录/" rel="prev" title="APP在哪里设置注册登录?">
+                APP在哪里设置注册登录? <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="savianzhao" />
+          <p class="site-author-name" itemprop="name">savianzhao</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">12</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/±êÇ©">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">This post does not have a Table of Contents</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">savianzhao</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
